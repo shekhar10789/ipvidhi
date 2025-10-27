@@ -402,6 +402,7 @@ section {
     padding: var(--space-sm) var(--space-md);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .value-prop:hover {
@@ -413,6 +414,10 @@ section {
 .prop-icon {
     font-size: 28px;
     margin-bottom: 8px;
+}
+
+.value-prop-content {
+    /* Desktop: centered text */
 }
 
 .value-prop h3 {
@@ -686,7 +691,7 @@ section {
     opacity: 0.9;
 }
 
-/* World Map */
+/* Jurisdiction Badges */
 .jurisdiction-badges {
     display: flex;
     justify-content: center;
@@ -1019,12 +1024,6 @@ section {
     background: rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-lg);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    
-}
-
-.spark-closing h3 {
-    color: var(--white);
-    
 }
 
 .spark-closing p {
@@ -1907,9 +1906,55 @@ footer {
         gap: var(--space-md);
     }
     
+    /* Value Props - Simple List on Mobile */
+    .value-props {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+    
+    .value-prop {
+        background: none;
+        border: none;
+        padding: var(--space-xs) 0;
+        backdrop-filter: none;
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-sm);
+        text-align: left;
+        flex: none;
+    }
+    
+    .value-prop:hover {
+        background: none;
+        transform: none;
+        border: none;
+    }
+    
+    .prop-icon {
+        font-size: 24px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    
+    .value-prop-content {
+        flex: 1;
+    }
+    
     .value-prop h3 {
         white-space: normal;
-        font-size: 16px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    
+    .value-prop-subtext {
+        white-space: normal;
+        font-size: 13px;
+        opacity: 0.8;
+        line-height: 1.4;
     }
     
     .hero-cta {
