@@ -1863,6 +1863,11 @@ footer {
     }
     
     /* Navigation Mobile */
+    .nav-container {
+        padding: var(--space-sm) var(--space-md);
+        align-items: center;
+    }
+    
     .nav-toggle {
         display: block;
     }
@@ -1894,16 +1899,20 @@ footer {
     
     /* Hero */
     #hero {
-        min-height: 500px;
-        padding: calc(var(--space-xl) + 60px) var(--space-sm) var(--space-lg);
+        min-height: 100vh;
+        padding: calc(60px + var(--space-md)) var(--space-sm) var(--space-md);
+        display: flex;
+        align-items: center;
     }
     
     .hero-content {
-        padding-bottom: var(--space-xl);
+        padding-bottom: 0;
+        width: 100%;
     }
     
     .hero-top {
-        gap: var(--space-md);
+        gap: var(--space-sm);
+        margin-bottom: var(--space-md);
     }
     
     /* Value Props - Simple List on Mobile */
@@ -1941,20 +1950,24 @@ footer {
     
     .value-prop-content {
         flex: 1;
+        display: flex;
+        flex-direction: column;
     }
     
     .value-prop h3 {
         white-space: normal;
         font-size: 15px;
         font-weight: 600;
-        margin-bottom: 2px;
+        margin-bottom: 4px;
+        line-height: 1.3;
     }
     
     .value-prop-subtext {
         white-space: normal;
-        font-size: 13px;
-        opacity: 0.8;
+        font-size: 12px;
+        opacity: 0.75;
         line-height: 1.4;
+        display: block;
     }
     
     .hero-cta {
@@ -1980,8 +1993,27 @@ footer {
         font-size: 15px;
     }
     
+    /* One Patent One Fee - Mobile */
+    .fee-content {
+        padding: 0 var(--space-sm);
+    }
+    
+    .fee-explanation {
+        text-align: left;
+        padding: 0;
+    }
+    
+    .fee-explanation p {
+        text-align: left;
+    }
+    
     .fee-details {
         grid-template-columns: 1fr;
+    }
+    
+    .fee-included,
+    .fee-excluded {
+        text-align: left;
     }
     
     .spark-benefits {
@@ -2036,6 +2068,20 @@ footer {
     .process-summary {
         flex-direction: column;
         gap: var(--space-md);
+        padding: var(--space-lg);
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: var(--radius-lg);
+        backdrop-filter: blur(10px);
+        margin: 0 var(--space-sm);
+    }
+    
+    .summary-item {
+        padding: var(--space-sm) 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .summary-item:last-child {
+        border-bottom: none;
     }
     
     .footer-content {
