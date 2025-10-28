@@ -1898,7 +1898,7 @@ footer {
     /* Hero */
     #hero {
         min-height: 100vh;
-        padding: calc(40px + var(--space-md)) var(--space-sm) var(--space-md);
+        padding: calc(40px + var(--space-xs)) var(--space-xs) var(--space-xs);
         display: flex;
         align-items: center;
 
