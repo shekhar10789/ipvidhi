@@ -1898,9 +1898,10 @@ footer {
     /* Hero */
     #hero {
         min-height: 100vh;
-        padding: calc(60px + var(--space-md)) var(--space-sm) var(--space-md);
+        padding: calc(40px + var(--space-md)) var(--space-sm) var(--space-md);
         display: flex;
         align-items: center;
+
     }
     
     .hero-content {
