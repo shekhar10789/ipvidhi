@@ -416,9 +416,7 @@ section {
     margin-bottom: 8px;
 }
 
-.value-prop-content {
-    /* Desktop: centered text */
-}
+
 
 .value-prop h3 {
     color: var(--white);
@@ -1908,23 +1906,23 @@ footer {
     .hero-content {
         padding-bottom: 0;
         width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
     }
     
     .hero-top {
-        gap: var(--space-sm);
-        margin-bottom: var(--space-md);
+        gap: var(--space-md);
+        margin-bottom: var(--space-lg);
+        text-align: center;
     }
     
-    /* Value Props - Simple List on Mobile */
+    /* Value Props - Hidden on Mobile */
     .value-props {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-sm);
-        overflow-x: visible;
-        padding-bottom: 0;
+        display: none;
+        
     }
     
-    .value-prop {
+    /* .value-prop {
         background: none;
         border: none;
         padding: var(--space-xs) 0;
@@ -1968,7 +1966,7 @@ footer {
         opacity: 0.75;
         line-height: 1.4;
         display: block;
-    }
+    } */
     
     .hero-cta {
         flex-direction: column;
