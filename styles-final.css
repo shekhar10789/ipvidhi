@@ -1862,7 +1862,7 @@ footer {
     
     /* Navigation Mobile */
     .nav-container {
-        padding: var(--space-sm) var(--space-md);
+        padding: var(--space-xs) var(--space-xs);
         align-items: center;
     }
     
