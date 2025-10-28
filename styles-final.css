@@ -1912,8 +1912,8 @@ footer {
     }
     
     .hero-top {
-        gap: var(--space-md);
-        margin-bottom: var(--space-lg);
+        gap: var(--space-sm);
+        margin-bottom: var(--space-sm);
         text-align: center;
     }
     
